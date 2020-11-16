@@ -14,7 +14,6 @@ class ToggleableUIElement {
         this.off_style = "none";
         this.state = (this.element.style.display === this.on_style);
         ToggleableUIElement.toggleables[id] = this;
-        this.set_state(this.state);
     }
     set_state(bool) {
         if (bool) {
