@@ -1,52 +1,6 @@
-/* Lato */
-
-@font-face {
-	font-family: "Lato";
-	font-weight: 100 400;
-	src: url("font/Lato/Lato-Regular.ttf");
-}
-
-@font-face {
-	font-family: "Lato";
-	font-weight: 500 900;
-	src: url("font/Lato/Lato-Bold.ttf");
-}
-
-
-/* Montserrat */
-
-@font-face {
-	font-family: "Montserrat";
-	font-weight: 100 900;
-	src: url("font/Montserrat/Montserrat-Regular.ttf");
-}
-
-
-/* Mulish */
-
-@font-face {
-	font-family: "Mulish";
-	font-weight: 100 300;
-	src: url("font/Mulish/Mulish-Light.ttf");
-}
-
-@font-face {
-	font-family: "Mulish";
-	font-weight: 400;
-	src: url("font/Mulish/Mulish-Regular.ttf");
-}
-
-@font-face {
-	font-family: "Mulish";
-	font-weight: 500 700;
-	src: url("font/Mulish/Mulish-Bold.ttf");
-}
-
-@font-face {
-	font-family: "Mulish";
-	font-weight: 800 900;
-    src: url("font/Mulish/Mulish-ExtraBold.ttf");
-}
+@import url("https://fonts.googleapis.com/css?family=Lato"); /* &display=swap */
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+@import url("https://fonts.googleapis.com/css?family=Mulish");
 
 
 /* Text style class selectors */
@@ -71,18 +25,14 @@
 	font-family: "Mulish";
 }
 
-.mulish-extrabold {
-	font-family: "Mulish ExtraBold";
-}
-
-.light {
+.fw-light { /* font-weight light */
 	font-weight: 300;
 }
 
-.bold {
+.fw-bold {
 	font-weight: 700;
 }
 
-.extrabold {
+.fw-black {
 	font-weight: 900;
 }
