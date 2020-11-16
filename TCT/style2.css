@@ -1,0 +1,116 @@
+#main-frame {
+	/*background-color: rgb(42, 49, 107);*/
+	display: flex;
+	flex-direction: column;
+}
+
+#top-bar > div {
+	display: inline-block;
+	font-size: 1.2vw;
+	width: calc(100% / 3 - 2vw);
+	margin: 0.8vw 1vw;
+}
+
+#top-bar > div:first-child {
+	float: left;
+	text-align: left;
+}
+
+#top-bar > div:last-child {
+	float: right;
+	text-align: right;
+}
+
+#control-frame {
+	background-image: url(img/whitehouse.jpg);
+	background-position: center;
+	background-size: cover;
+	
+	flex-grow: 1;
+	display: flex;
+	flex-direction: row;
+}
+
+#left-control-frame {
+	width: calc(100% / 6);
+	display: flex;
+	flex-direction: column;
+}
+
+#left-control-frame > input {
+	background-color: rgba(200, 150, 200, 0.5);
+	box-shadow: inset 0 0 0 5px rgb(200, 150, 200);
+	margin: 10px auto 0 auto;
+	width: 90%;
+	height: 12vh;
+	font-size: 1.2vw;
+	
+	border: none;
+	color: rgb(255, 255, 255);
+	white-space: normal;
+}
+
+#center-control-frame {
+	width: calc(200% / 3);
+	display: flex;
+}
+
+#center-control-frame > div {
+	flex-grow: 1;
+}
+
+#map-slide {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+}
+
+#map {
+	display: block;
+	//background-color: #888;
+	width: auto;
+	height: 70vh;
+	margin: 1vh auto;
+}
+
+#next-turn-button {
+	display: block;
+	background-color: rgba(100, 250, 100, 0.5);
+	box-shadow: inset 0 0 0 5px rgb(50, 200, 50);
+	margin: auto;
+	width: 20vw;
+	font-size: 3vh;
+	padding: 0.5vw 0;
+	
+	border: none;
+	color: rgb(255, 255, 255);
+	white-space: normal;
+}
+
+#right-control-frame {
+	width: calc(100% / 6);
+	
+	display: flex;
+	flex-direction: column;
+}
+
+#right-control-frame > div:first-child {
+	margin: 1vw 1vw 0 1vw;
+}
+
+#right-control-frame > div {
+	flex-grow: 1;
+	margin: 1vw;
+	
+	color: white;
+}
+
+#tooltip-frame {
+	border: 5px ridge rgb(0, 255, 0);
+	background-color: rgba(128, 255, 128, 0.7);
+}
+
+#news-frame {
+	border: 5px ridge rgb(0, 128, 255);
+	background-color: rgba(128, 192, 255, 0.7);
+}
