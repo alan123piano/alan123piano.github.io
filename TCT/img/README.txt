@@ -1,1 +1,0 @@
-title-background.png : applied filter rgba(0, 20, 80, 0.6)
