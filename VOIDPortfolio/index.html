@@ -9,6 +9,7 @@ Template: https://www.figma.com/file/4VtfT5ddMnMHqDPqU0bb9J/VOID-Portfolio-Wiref
 TODO:
   - rename aboutme-skill* classes to something that encompasses the idea of
     both aboutme and experience sections
+  - switch section labels (ex. About Me.) from divs to h1-h6 elements (semantic html & SEO)
 
 -->
 <!doctype html>
@@ -16,29 +17,44 @@ TODO:
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport'>
   <title>Portfolio Template</title>
   <link rel="stylesheet" href="textstyles.css">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body class="mulish">
-  <div class="navbar fw-bold">
-    <div class="navbar-left">
-      <div class="navbar-element navbar-name blue-text lato">ALAN YANG</div>
-    </div>
-    <div class="navbar-right">
-      <a class="navbar-element navbar-link" href="#aboutme">About</a>
-      <a class="navbar-element navbar-link" href="#projects">Projects</a>
-      <a class="navbar-element navbar-link" href="#experience">Experience</a>
-      <a class="navbar-element navbar-link" href="#contact">Contact</a>
-      <a class="navbar-link navbar-button">Resume</a>
+  <!-- modal is computer-only -->
+  <div id="modal">
+    <div class="modal-window">
+      <button class="modal-exit-button light-gray-text fw-bold" onclick="update_toggleable('modal', 'off');">&times;</button>
+      <h1>Download file</h1>
+      <a download class="blue-text fw-bold" href="resume.pdf">Download resume.pdf</a>
+      <div class="modal-buttons">
+        <button class="text-button" onclick="update_toggleable('modal', 'off');">Cancel</button>
+      </div>
     </div>
   </div>
+
+  <div id="navbar" class="fw-bold">
+    <div class="navbar-name blue-text lato">ALAN YANG</div>
+    <div id="navbar-links">
+      <a href="#aboutme">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+      <button class="text-button" onclick="update_toggleable('modal', 'on');">Resume</button> <!-- download attr refers to download name -->
+    </div>
+
+    <!-- mobile only -->
+    <button id="navbar-hamburger" onclick="update_toggleable('navbar-links', 'toggle');"></button>
+  </div>
+
   <div class="page-content">
     <div class="profile-container">
       <img class="profile-img" src="img/profilemoji.png">
       <div class="profile-blurb-container">
-        <div class="profile-blurb-top">👋 Hola, I'm <span class="blue-text">Alan</span></div>
-        <div class="profile-blurb-bottom">Hi, I'm Alan and I'm a UMich CS major who is now learning front-end web development as a member of VOID! (Also, the stock bitmoji is definitely not me)</div>
+        <div class="profile-blurb-top fw-black">👋 Hola, I'm <span class="blue-text">Alan</span></div>
+        <div class="profile-blurb-bottom">I'm a UMich CS major who is now learning front-end web development as a member of VOID! (Disregard the stock bitmoji icon for now.)</div>
       </div>
     </div>
 
@@ -161,7 +177,7 @@ TODO:
           <input class="contact-text-input mulish" type="text" placeholder="First name">
           <input class="contact-text-input mulish" type="text" placeholder="Email address">
         </div>
-        <input class="contact-text-input mulish" type="text" placeholder="Write message here">
+        <textarea class="contact-text-input mulish" rows="4" cols="20" placeholder="Write message here"></textarea>
         <input class="contact-submit-input montserrat white-text" type="submit" value="Send">
       </div>
     </div>
@@ -183,5 +199,8 @@ TODO:
   </div>
 
   <div class="page-bottom-email">Email me at <a class="blue-text fw-bold" href="mailto: alanyang@umich.edu">alanyang@umich.edu</a></div>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
 </body>
 </html>
