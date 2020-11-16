@@ -1,0 +1,187 @@
+<!--
+
+Alan Yang
+
+VOID Portfolio
+
+Template: https://www.figma.com/file/4VtfT5ddMnMHqDPqU0bb9J/VOID-Portfolio-Wireframes
+
+TODO:
+  - rename aboutme-skill* classes to something that encompasses the idea of
+    both aboutme and experience sections
+
+-->
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Portfolio Template</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="textstyles.css">
+</head>
+<body class="mulish">
+  <div class="navbar bold">
+    <div class="navbar-left">
+      <div class="navbar-element navbar-name blue-text lato">ALAN YANG</div>
+    </div>
+    <div class="navbar-right">
+      <a class="navbar-element navbar-link" href="#aboutme">About</a>
+      <a class="navbar-element navbar-link" href="#projects">Projects</a>
+      <a class="navbar-element navbar-link" href="#experience">Experience</a>
+      <a class="navbar-element navbar-link" href="#contact">Contact</a>
+      <a class="navbar-link navbar-button">Resume</a>
+    </div>
+  </div>
+  <div class="page-content">
+    <div class="profile-container">
+      <img class="profile-img" src="img/profilemoji.png">
+      <div class="profile-blurb-container">
+        <div class="profile-blurb-top">👋 Hola, I'm <span class="blue-text">Alan</span></div>
+        <div class="profile-blurb-bottom">Hi, I'm Alan and I'm a UMich CS major who is now learning front-end web development as a member of VOID! (Also, the stock bitmoji is definitely not me)</div>
+      </div>
+    </div>
+
+    <div class="section">
+      <span class="href-anchor" id="aboutme"></span>
+      <div class="section-header blue-text extrabold">About Me.</div>
+      <div class="section-body">
+        This website was designed according to a VOID Tech Figma specification. Emphasis was placed on making simple, comprehensible, and extendible HTML/CSS code. A 768px media query is used to create a breakpoint so that the design will behave as intended on both PC and mobile screens.
+      </div>
+      <div class="aboutme-skills-container">
+        <div class="captioned-img">
+          <img class="aboutme-skill-icon-small" src="img/cppsuitcase.png">
+          <div class="aboutme-skill-name bold">c++</div>
+          <div class="aboutme-skill-desc">At eripuit signiferumque sea, vel ad mucius molestie, cu labitur iuvaret vulputate sed.</div>
+        </div>
+        <div class="captioned-img">
+          <img class="aboutme-skill-icon-small" src="img/pythonwheel.png">
+          <div class="aboutme-skill-name bold">Python</div>
+          <div class="aboutme-skill-desc">At eripuit signiferumque sea, vel ad mucius molestie, cu labitur iuvaret vulputate sed.</div>
+        </div>
+        <div class="captioned-img">
+          <img class="aboutme-skill-icon-small" src="img/htmlwrench.png">
+          <div class="aboutme-skill-name bold">HTML/CSS</div>
+          <div class="aboutme-skill-desc">At eripuit signiferumque sea, vel ad mucius molestie, cu labitur iuvaret vulputate sed.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <span class="href-anchor" id="projects"></span>
+      <div class="section-header blue-text extrabold">Projects.</div>
+      <div class="project-container">
+        <div class="project">
+          <div class="project-left">
+            <div class="project-name extrabold">
+              PROJECT NAME
+            </div>
+            <div class="project-desc">Project description or pitch or something, elit, hamana do eiusmod tempor incididunt labore magna tempore aliqua. Ut enim ad minim veniam, quis nostrud eiusumo.</div>
+            <div class="project-desc-subtext">Insight into how you built it, and other professional housekeeping like what skills it took, ie I used c++.</div>
+            <div class="icon-with-text">
+              <img src="img/gitlogo.png" class="inline-icon">
+              <a href="https://www.google.com">See more about this project</a>
+            </div>
+          </div>
+          <div class="project-right">
+            <img src="img/blankgray.png" class="project-img">
+          </div>
+        </div>
+        <div class="project">
+          <div class="project-left">
+            <div class="project-name extrabold">
+              PROJECT NAME
+            </div>
+            <div class="project-desc">Project description or pitch or something, elit, hamana do eiusmod tempor incididunt labore magna tempore aliqua. Ut enim ad minim veniam, quis nostrud eiusumo.</div>
+            <div class="project-desc-subtext">Insight into how you built it, and other professional housekeeping like what skills it took, ie I used c++.</div>
+            <div class="icon-with-text">
+              <img src="img/gitlogo.png" class="inline-icon">
+              <a href="https://www.google.com">See more about this project</a>
+            </div>
+          </div>
+          <div class="project-right">
+            <img src="img/blankgray.png" class="project-img">
+          </div>
+        </div>
+        <div class="project">
+          <div class="project-left">
+            <div class="project-name extrabold">
+              PROJECT NAME
+            </div>
+            <div class="project-desc">Project description or pitch or something, elit, hamana do eiusmod tempor incididunt labore magna tempore aliqua. Ut enim ad minim veniam, quis nostrud eiusumo.</div>
+            <div class="project-desc-subtext">Insight into how you built it, and other professional housekeeping like what skills it took, ie I used c++.</div>
+            <div class="icon-with-text">
+              <img src="img/gitlogo.png" class="inline-icon">
+              <a href="https://www.google.com">See more about this project</a>
+            </div>
+          </div>
+          <div class="project-right">
+            <img src="img/blankgray.png" class="project-img">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <span class="href-anchor" id="experience"></span>
+      <div class="section-header blue-text extrabold">Experience.</div>
+      <div class="experiences-container">
+        <div class="captioned-img">
+          <img class="aboutme-skill-icon-large" src="img/stockimg500x500.png">
+          <div class="aboutme-skill-name bold">Ad eos saepe lucilius</div>
+          <div class="aboutme-skill-desc">At eripuit signiferumque sea, vel ad mucius molestie, cu labitur.</div>
+        </div>
+        <div class="captioned-img">
+          <img class="aboutme-skill-icon-large" src="img/stockimg500x500.png">
+          <div class="aboutme-skill-name bold">Ad eos saepe lucilius</div>
+          <div class="aboutme-skill-desc">At eripuit signiferumque sea, vel ad mucius molestie, cu labitur.</div>
+        </div>
+        <div class="captioned-img">
+          <img class="aboutme-skill-icon-large" src="img/stockimg500x500.png">
+          <div class="aboutme-skill-name bold">Ad eos saepe lucilius</div>
+          <div class="aboutme-skill-desc">At eripuit signiferumque sea, vel ad mucius molestie, cu labitur.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section contact">
+    <span class="href-anchor" id="contact"></span>
+    <div class="section-header extrabold">Contact me.</div>
+    <div class="contact-body">
+      <div class="contact-left">
+        <div class="contact-left-text light">I'd love to chat!</div>
+        <div class="icon-with-text">
+          <img class="inline-icon" src="img/phoneicon.png">
+          <div>000 000 0000</div>
+        </div>
+      </div>
+      <div class="contact-form">
+        <div class="row-flex">
+          <input class="contact-text-input mulish" type="text" placeholder="First name">
+          <input class="contact-text-input mulish" type="text" placeholder="Email address">
+        </div>
+        <input class="contact-text-input mulish" type="text" placeholder="Write message here">
+        <input class="contact-submit-input montserrat white-text" type="submit" value="Send">
+      </div>
+    </div>
+  </div>
+
+  <div class="social-links">
+    <a href="https://www.google.com">
+      <img src="">
+    </a>
+    <a href="https://www.google.com">
+      <img src="">
+    </a>
+    <a href="https://www.google.com">
+      <img src="">
+    </a>
+    <a href="https://www.google.com">
+      <img src="">
+    </a>
+  </div>
+
+  <div class="page-bottom-email">Email me at <a class="blue-text bold" href="mailto: alanyang@umich.edu">alanyang@umich.edu</a></div>
+</body>
+</html>

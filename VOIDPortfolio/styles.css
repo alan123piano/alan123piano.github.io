@@ -1,0 +1,341 @@
+/*
+ * Alan Yang
+ * VOID Tech Consulting Portfolio Project
+ *
+ * TODO:
+ *   > Add breakpoints:
+ *       320: mobile devices (profile)              [Not started]
+ *       481: mobile devices (landscape), tablets   [Not started]
+ *       769px: Small screen laptops                [In progress]
+ *       1025px: Laptops, computers                 [Not started]
+ *   > Switch to "mobile-first" design to improve loading times
+ *   > Finish social media links section
+ *   > PHP/serverside collection of contact queries?
+ *
+ */
+
+
+/* General tag selectors */
+
+html {
+    font-size: 62.5%; /* sets size of 1rem to equal 10px */
+}
+
+body {
+    color: #373f41;
+    margin: 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+/* Recurring class selectors */
+
+.row-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.icon-with-text {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 1.2rem;
+    line-height: 1.68rem;
+    margin-top: auto;
+}
+
+.inline-icon {
+    width: 1.6rem;
+    height: 1.6rem;
+    margin-right: 0.6rem;
+}
+
+.href-anchor {
+    position: absolute;
+    margin-top: -9rem;
+}
+
+/* Section class selectors */
+
+.section {
+    padding: 0 12rem; /* top right bottom left */
+}
+
+.section-header {
+    padding: 4rem 0;
+    font-size: 3rem;
+}
+
+.section-body {
+    margin: 0 5.5rem 0 11rem;
+    font-size: 2.4rem;
+    line-height: 3.4rem;
+}
+
+
+/* Navbar selectors */
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+    border-bottom: 0.1rem solid #e2e5e6;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-left {
+    margin-left: 3.2rem;
+    display: flex;
+}
+
+.navbar-right {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 0.3rem;
+}
+
+.navbar-element {
+    margin: auto 1.6rem;
+}
+
+.navbar-name {
+    font-size: 2.4rem;
+}
+
+.navbar-link {
+    font-size: 1.6rem;
+}
+
+.navbar-button {
+    padding: 1.2rem 1.8rem;
+    margin: 2.3rem 3.1rem;
+    background-color: #3c64b1;
+    color: #fff;
+}
+
+
+/* Page content singleton selector - all page elements excluding navbar */
+
+.page-content {
+    margin-top: 8.76rem;
+}
+
+
+/* Profile section selectors */
+
+.profile-container {
+    display: flex;
+    justify-content: center;
+    padding: 10rem 0;
+}
+
+.profile-img {
+    width: 16rem;
+    height: 16rem;
+    margin: auto 7rem;
+}
+
+.profile-blurb-container {
+    margin: auto 7rem;
+}
+
+.profile-blurb-top {
+    margin-bottom: 1rem;
+    font-size: 3rem;
+}
+
+.profile-blurb-bottom {
+    max-width: 32rem;
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+}
+
+
+/* Aboutme/Experiences shared selectors */
+
+.aboutme-skills-container {
+    margin: 7.5rem 0;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.experiences-container {
+    margin: 7.5rem 0;
+
+    display: flex;
+    justify-content: center;
+    height: 32rem;
+}
+
+.captioned-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 0 2rem;
+    max-width: 26rem;
+}
+
+.aboutme-skill-icon-small {
+    width: 4rem;
+    height: 4rem;
+    margin: 0 auto;
+}
+
+.aboutme-skill-icon-large {
+    width: 26rem;
+    height: 26rem;
+    margin: 0 auto;
+}
+
+.aboutme-skill-name {
+    font-size: 1.8rem;
+	line-height: 2.4rem;
+	margin-top: 3.6rem;
+	margin-bottom: 1.2rem;
+    text-align: center;
+}
+
+.aboutme-skill-desc {
+    font-size: 1.4rem;
+    line-height: 2rem;
+    text-align: center;
+}
+
+
+/* Project section selectors */
+
+.project-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.project-container > div:not(:last-child) {
+    border-bottom: 0.15rem solid #cbcbcb
+}
+
+.project {
+    display: flex;
+    margin: 0 4rem;
+    padding: 6.5rem 0;
+}
+
+.project-left {
+    flex-grow: 1;
+	height: 29rem;
+	margin-right: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.project-right {
+    flex-grow: 0;
+}
+
+.project-name {
+    font-size: 2.4rem;
+    line-height: 3.36rem;
+}
+
+.project-desc {
+    font-size: 1.8rem;
+    margin: 1.5rem 0;
+}
+
+.project-desc-subtext {
+    font-size: 1.2rem;
+    color: #979797;
+}
+
+.project-img {
+    width: 45.4rem;
+    height: 29rem;
+}
+
+
+/* Contact section selectors */
+
+.contact {
+    background-color: #3c64b1;
+    color: #ffffff;
+}
+
+.contact-body {
+    margin-top: 2rem;
+    margin-left: 4rem;
+    display: flex;
+}
+
+.contact-left {
+    margin-right: 12rem;
+    display: flex;
+    flex-direction: column;
+    max-width: 18rem;
+}
+
+.contact-left-text {
+    font-size: 4.8rem;
+    line-height: 8rem;
+}
+
+.contact-left > .icon-with-text {
+    margin: 6rem 0;
+}
+
+.contact-form {
+    margin-top: 2.2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form > .row-flex {
+    margin-bottom: 2.6rem;
+}
+
+.contact-form > .row-flex > input:not(:last-child) {
+    margin-right: 2rem;
+}
+
+.contact-text-input {
+    padding: 0.8rem 1.4rem;
+    font-size: 1.5rem;
+}
+
+.contact-submit-input {
+    width: fit-content;
+    margin: 2rem 0;
+    padding: 1rem 4.5rem;
+    font-size: 1.5rem;
+    background: #3c64b1;
+    border: 0.3rem solid #ffffff;
+    box-sizing: border-box;
+    border-radius: 0.6rem;
+}
+
+
+/* Social links section selectors */
+
+.social-links {
+    display: flex;
+    justify-content: center;
+}
+
+
+/* Singleton selector for div at bottom of page line containing email */
+
+.page-bottom-email {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 1.2rem;
+}
+
